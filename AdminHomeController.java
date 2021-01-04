@@ -53,7 +53,6 @@ public class AdminHomeController extends BaseController {
         map.put("userTotal",userTotal);
         map.put("orderTotal",orderTotal);
         logger.info("转到后台管理-主页");
-
 //333
         return "admin/homePage";
     }
