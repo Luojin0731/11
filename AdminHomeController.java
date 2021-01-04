@@ -41,6 +41,7 @@ public class AdminHomeController extends BaseController {
         logger.info("获取管理员信息");
         Admin admin = adminService.get(null,Integer.parseInt(adminId.toString()));
         map.put("admin",admin);
+
 //222
         logger.info("获取统计信息");
         Integer productTotal = productService.getTotal(null,new Byte[]{0,2});
